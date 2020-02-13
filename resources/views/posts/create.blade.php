@@ -26,15 +26,16 @@
                         </span>
                     @enderror
                 </div>
-            <div class="row">
-                <label for="image" class="col-md-4 col-form-label">Post Image</label>
+                <div class="row">
+                    <label for="image" class="col-md-4 col-form-label">Post Image</label>
 
-                <input type="file" class="form-control-file" id="image" name="image">
-                @error('image')
+                    <input type="file" class="form-control-file" id="image" name="image">
+                    @error('image')
 
-                    <strong>{{ $message }}</strong>
+                        <strong>{{ $message }}</strong>
 
-                @enderror
+                    @enderror
+                </div>
             </div>
             <div class="row pt-4">
                 <button class="btn btn-primary">Add New Post</button>
